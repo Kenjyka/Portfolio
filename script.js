@@ -1,6 +1,6 @@
 const textoDigitado = document.getElementById("texto-digitado")
 const cursor = document.getElementById("cursor")
-const textos = ["programador", "estudante", "esfomeado"]
+const textos = ["programador", "estudante"]
 const digitarDelay = 200
 const apagarDelay = 100
 const novoTextoDelay = 2000

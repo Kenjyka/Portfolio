@@ -18,7 +18,7 @@ header {
     height: 10%;
 }
 .navbar {
-    width: 100%;
+    width: 80%;
 }
 .navbar-collapse {
     flex-grow: 0;
@@ -125,6 +125,7 @@ h1:hover {
 }
 
 footer {
+    display: none;
     width: 200px;
     height: 200px;
 }
@@ -147,9 +148,15 @@ footer {
 #tecnologias {
     font-size: 30px;
     margin-top: 2em;
+    border: 1px #ccc solid;
+    width: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 #tecnologias i {
     font-size: 40px;
+    
 }
 
 #html {
