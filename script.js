@@ -41,4 +41,21 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-const conhecimentos = document.getElementById
+
+
+
+let removedorDeProjetosInicial = document.getElementById('abas').querySelectorAll('.projeto-display')
+for(i = 0; i < removedorDeProjetosInicial.length; i++) {
+    let removedorDeProjetosInicialAddon = removedorDeProjetosInicial[i].querySelector('p')
+    console.log(removedorDeProjetosInicialAddon)
+    removedorDeProjetosInicial[i].classList.remove('active')
+    removedorDeProjetosInicialAddon.classList.remove('active')
+}
+
+
+function ativaProjeto(projeto) {
+    const projetoChild = projeto.querySelector('.projeto-display-addon')  
+    projeto.classList.toggle("active")
+    console.log(projetoChild)
+    projetoChild.classList.toggle("active")
+}

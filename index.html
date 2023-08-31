@@ -21,7 +21,7 @@
 <body>
 
     <header class="fixed-top d-flex justify-content-center" id="cabecalho">
-        <nav class="navbar navbar-expand-lg justify-content-between align-items-center m-2">
+        <nav class="navbar navbar-expand-md justify-content-between align-items-center m-2">
             <a href="#" onclick=" document.body.scrollTop = 0;document.documentElement.scrollTop = 0;" class="navbar-brand ms-2">Home</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -29,6 +29,7 @@
             <div class="collapse navbar-collapse justify-self-end" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
                   <a class="nav-link" href="#projetos">Sobre mim</a>
+                  <a class="nav-link" href="#abas">projetos</a>
                 </div>
             </div>
         </nav>
@@ -86,7 +87,47 @@
             </div>
             <section id="abas">
                 <h2 id="abas-projetos">Projetos</h2>
-
+                <div>
+                    <div class="projeto-display active" onclick="ativaProjeto(this)">
+                        <h3>Projeto filmes</h3>
+                        <small>API imdb</small>
+                        <p class="projeto-display-addon active">
+                            Um projeto que consome a API do IMDB e usa as imagens e informações sobre o filme para fazer uma pesquisa da database, mostrando informações da pesquisa
+                        </p>
+                    </div>
+                    <span class="situacao">em andamento</span>
+                </div>
+                <div>
+                    <div class="projeto-display active" onclick="ativaProjeto(this)">
+                        <h3>Em breve</h3>
+                        <small>sendo desenvolvido</small>
+                        <p class="projeto-display-addon active">
+                            Um projeto futuro que será colocado aqui como exemplo
+                        </p>
+                    </div>
+                    <span class="situacao">aguardando</span>
+                </div>
+                <div>
+                    <div class="projeto-display active" onclick="ativaProjeto(this)">
+                        <h3>Em breve</h3>
+                        <small>sendo desenvolvido</small>
+                        <p class="projeto-display-addon active">
+                            Um projeto futuro que será colocado aqui como exemplo
+                        </p>
+                    </div>
+                    <span class="situacao">aguardando</span>
+                </div>
+                <div>
+                    <div class="projeto-display active" onclick="ativaProjeto(this)">
+                        <h3>Em breve</h3>
+                        <small>sendo desenvolvido</small>
+                        <p class="projeto-display-addon active">
+                            Um projeto futuro que será colocado aqui como exemplo
+                        </p>
+                    </div>
+                    <span class="situacao" id="ultimaSituacao">aguardando</span>
+                </div>
+                
             </section>
         </section>
     </main>
