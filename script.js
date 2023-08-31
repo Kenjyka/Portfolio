@@ -38,3 +38,7 @@ function apagar(){
 document.addEventListener('DOMContentLoaded', function() {
     if(textos.length) setTimeout(escrever, novoTextoDelay)
 })
+
+
+
+const conhecimentos = document.getElementById
