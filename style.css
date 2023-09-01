@@ -29,7 +29,9 @@ body {
 .navbar-collapse {
     flex-grow: 0;
 }
-
+.nav-link {
+    cursor: pointer;
+}
 ul {
     list-style: none;
 }
@@ -38,6 +40,7 @@ li {
 }
 main {
     margin-top: 5%;
+    height: auto;
 }
 
 #home {
@@ -129,10 +132,63 @@ h1:hover {
 }
 
 footer {
-    display: none;
-    width: 200px;
-    height: 200px;
+    width: 100%;
+    height: 120px;
+    background-color: var(--texto-claro);
+    color: var(--texto-primario);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
+#footer > section {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+#footer span {
+    flex-wrap: wrap;
+    width: 50%;
+    display: flex;
+    margin-right: 10px;
+}
+#footer  span.material-symbols-outlined,#footer span.bi {
+    display: block;
+    margin:0 10px;
+    flex-wrap: nowrap;
+    width: auto;
+}
+#footer a {
+    text-decoration: none;
+    color: inherit;
+}
+#footer div {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+}
+#email > span {
+    margin: 0;
+    width: auto;
+}
+.git-links {
+    justify-content: flex-start!important;
+}
+#direito-contato {
+    flex-direction: column;
+}
+#direito-contato > div {
+    justify-content: end;
+}
+#direito-contato > span.bi {
+    margin-left: 30px;
+}
+
 
 @keyframes piscar {
     49% {background-color: #ccc;}
@@ -190,6 +246,9 @@ footer {
     cursor: default;
 }
 
+.bi {
+    font-size: 22px;
+}
 
 #cursos-lado {
     width: 30%;
@@ -291,7 +350,6 @@ span > h2 {
 }
 
 
-
 @media(min-width:1400px) {
     .navbar {
         width: 60%;
@@ -342,14 +400,32 @@ span > h2 {
         flex-direction: column!important;
         align-items: center;
         justify-content: flex-start!important;
+        height: fit-content;
+        padding-bottom: 50px;
     }
     #cursos-lado {
-        width: 80%;
+        width: 95%;
         margin-bottom: 5em;
         height: auto;
     }
     #abas {
         gap: 10px;
         width: 90%;
+    }
+    #direito-contato > div{
+        justify-content: end!important;
+    }
+    #footer div {
+        justify-content: start;
+    }
+    #footer {
+        height: auto;
+        justify-content: space-around;
+        padding: 10px 0;
+    }
+    #footer section {
+        width: 80%;
+        align-items: center;
+        margin:  0 20px;
     }
 }
