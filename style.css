@@ -12,6 +12,9 @@
     --texto-secundario: #f1f1f1;
     --texto-claro: #ccc;
 }
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
 html {
     scroll-behavior: smooth;
 }
