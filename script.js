@@ -41,9 +41,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-
-
-
 let removedorDeProjetosInicial = document.getElementById('abas').querySelectorAll('.projeto-display')
 for(i = 0; i < removedorDeProjetosInicial.length; i++) {
     let removedorDeProjetosInicialAddon = removedorDeProjetosInicial[i].querySelector('p')
