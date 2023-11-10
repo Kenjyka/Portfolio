@@ -157,6 +157,8 @@ footer {
     width: 50%;
     display: flex;
     margin-right: 10px;
+    cursor: pointer;
+    
 }
 #footer  span.material-symbols-outlined,#footer span.bi {
     display: block;
@@ -174,6 +176,11 @@ footer {
     align-items: center;
     width: 100%;
     text-align: center;
+    transition: color .5s;
+
+    &:hover {
+        color: var(--primaria);
+    }
 }
 #email > span {
     margin: 0;
@@ -430,6 +437,8 @@ span > h2 {
     }
     #footer div {
         justify-content: start;
+
+        
     }
     #footer {
         height: auto;
